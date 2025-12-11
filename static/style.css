@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitcount Prop Single';
+}
+
+body {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prediction_heading h1{
+    font-size: 10vh;
+    font-weight: 500;
+}
+
+.prediction_features input{
+    height: 5vh;
+    width: 25vw;
+    margin-top: 1.5vh;
+    font-size: 1.5vh;
+    border: 1px solid black;
+}
+
+.prediction_features .submit{
+    font-size: 2.5vh;
+}
+
+.prediction_features .submit:hover {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.prediction_features input::placeholder {
+    display: flex;
+    text-align: center;
+    font-family: 'Bitcount Prop Single';
+}
+
+.prediction_value {
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+.prediction_value .predi {
+    font-size: 3vh;
+}

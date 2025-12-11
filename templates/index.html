@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Crop Prediction</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+        <div class="prediction_heading">
+            <h1>Crop Prediction</h1>
+        </div>
+        <div class="prediction_features">
+            <form action="{{url_for('predict')}}" method="post">
+                <input type="number" name="nitrogen" placeholder="Nitrogen" required="required"/><br>
+                <input type="number" name="phosphorus" placeholder="Phosphorus" required="required"/><br>
+                <input type="number" name="potassium" placeholder="Potassium" required="required"/><br>
+                <input type="number" name="temperature" placeholder="Temperature" required="required"/><br>
+                <input type="number" name="humidity" placeholder="Humidity" required="required"/><br>
+                <input type="number" name="ph" placeholder="pH Level" required="required"/><br>
+                <input type="number" name="rainfall" placeholder="Rain Fall" required="required"/><br>
+                <input type="submit" class="submit" value="Predict">
+            </form>
+        </div>
+        <div class="prediction_value">
+            <h1 class="predi">
+                {{ prediction_text }}
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
