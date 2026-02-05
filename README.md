@@ -6,6 +6,8 @@ This project is a **Machine Learning–based Crop Recommendation System** built 
 Given soil and climate parameters such as **Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, and Rainfall**,  
 the model predicts the **most suitable crop** to grow.
 
+Accuracy > 95%
+
 ---
 
 ## 🚀 Features
